@@ -3,3 +3,13 @@ C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example
 C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.AssemblyInfoInputs.cache
 C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.AssemblyInfo.cs
 C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.csproj.CoreCompileInputs.cache
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\bin\Debug\net6.0\Example_002_hi_user.exe
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\bin\Debug\net6.0\Example_002_hi_user.deps.json
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\bin\Debug\net6.0\Example_002_hi_user.runtimeconfig.json
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\bin\Debug\net6.0\Example_002_hi_user.dll
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\bin\Debug\net6.0\Example_002_hi_user.pdb
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.dll
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\refint\Example_002_hi_user.dll
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.pdb
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.genruntimeconfig.cache
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\ref\Example_002_hi_user.dll
