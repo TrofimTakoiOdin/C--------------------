@@ -1,0 +1,5 @@
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.csproj.AssemblyReference.cache
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.AssemblyInfoInputs.cache
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.AssemblyInfo.cs
+C:\Users\arsen\Desktop\C# конспекты и задачи\Examples GB\Example_002_hi_user\obj\Debug\net6.0\Example_002_hi_user.csproj.CoreCompileInputs.cache
