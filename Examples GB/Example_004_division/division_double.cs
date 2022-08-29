@@ -1,14 +1,12 @@
-﻿// Целочисленное деление
-internal class Program
+internal partial class Program
 {
     private static void Main(string[] args)
     {
+        // Дробное деление
         Console.WriteLine("Введите число: ");
-        int a = Convert.ToInt32(Console.ReadLine());
+        double a = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Введите число: ");
-        int b = Convert.ToInt32(Console.ReadLine());
+        double b = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Частное равно: " + a / b);
     }
 }
-
-
