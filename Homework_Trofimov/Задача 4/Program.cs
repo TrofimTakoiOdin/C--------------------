@@ -12,27 +12,31 @@ int a = Convert.ToInt32(splitString[0]);
 int b = Convert.ToInt32(splitString[1]);
 int c = Convert.ToInt32(splitString[2]);
 if (a > b && b >= c)
-    Console.WriteLine($"Максимальное значение равно: {a}");
+    
 {
+    Console.WriteLine($"Максимальное значение равно: {a}");
 }
 
-if (a > c && c >= b)
-    Console.WriteLine($"Максимальное значение равно: {a}");
+else if (a > c && c >= b)
+    
 {
+    Console.WriteLine($"Максимальное значение равно: {a}");
 }
-if (b > a && a >= c)
+else if (b > a && a >= c)
 {
     Console.WriteLine($"Максимальное значение равно: {b}");
 }
-if (b > c && c >= a)
+else if (b > c && c >= a)
 {    
     Console.WriteLine($"Максимальное значение равно: {b}");
 }
-if (c > a && a >= b)
-    Console.WriteLine($"Максимальное значение равно: {c}");
+else if (c > a && a >= b)
+    
 {
+    Console.WriteLine($"Максимальное значение равно: {c}");
 }
-if (c > b && b >= a)
-    Console.WriteLine($"Максимальное значение равно: {c}");
+else
+    
 {
+    Console.WriteLine($"Максимальное значение равно: {c}");
 }
