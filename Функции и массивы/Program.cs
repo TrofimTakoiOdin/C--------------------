@@ -22,43 +22,34 @@ void PrintArray(int[] col)
     }
 }
 // Функция ищет индекс первого вхождения элемента в массив
-int IndexOf(int[] collection, int find) 
+void IndexOf(int[] collection, int find) 
 {
     int count = collection.Length;
     int index = 0;
     int position = -1;
-    string NoSuchInd = "Нет такого значения";
     while (index < count)
     {
         if (collection[index] == find)
         {
             position = index;
-            break;
+            Console.WriteLine ($"Найдена позиция: {position+1}");
         }
         
         index ++;
     }
-    return position;
+    if (position == -1)
+    {
+        Console.WriteLine("Нет такого значения");
+    }
 }
-// Массив array
+
 int[] array = new int [10];
-// Призываем функции
+
 FillArray(array);
 PrintArray(array);
-Console.WriteLine(); // Пустая строка
-// Просим пользователя ввести число, которое будем искать по индексу
-Console.Write("Введите целое число число, индекс которого необходимо найти: ");
-int IntElem = Convert.ToInt32(Console.ReadLine());  // Ввод пользователя
-int pos = IndexOf(array, IntElem);  // Вспомогательная переменная
-// Вывод на экран
-Console.WriteLine($"Искомый элемент: {IntElem}");
-if (pos == -1)
-{
-    Console.WriteLine("Такого элемента нет в массиве!");
-}
-else
-{
-    Console.WriteLine($"Позиция элемента в списке: {pos}");
-}
 
+Console.WriteLine(); 
 
+Console.Write("Введите целое число, индекс которого необходимо найти: ");
+int UserIn = int.Parse(Console.ReadLine());
+IndexOf(array,UserIn);
