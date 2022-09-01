@@ -26,7 +26,8 @@ int IndexOf(int[] collection, int find)
 {
     int count = collection.Length;
     int index = 0;
-    int position;
+    int position = -1;
+    string NoSuchInd = "Нет такого значения";
     while (index < count)
     {
         if (collection[index] == find)
@@ -34,10 +35,7 @@ int IndexOf(int[] collection, int find)
             position = index;
             break;
         }
-        else 
-        {
-            Console.WriteLine("Такого числа нет в массиве")
-        }
+        
         index ++;
     }
     return position;
@@ -54,4 +52,13 @@ int IntElem = Convert.ToInt32(Console.ReadLine());  // Ввод пользова
 int pos = IndexOf(array, IntElem);  // Вспомогательная переменная
 // Вывод на экран
 Console.WriteLine($"Искомый элемент: {IntElem}");
-Console.WriteLine($"Позиция элемента в списке: {pos}");
+if (pos == -1)
+{
+    Console.WriteLine("Такого элемента нет в массиве!");
+}
+else
+{
+    Console.WriteLine($"Позиция элемента в списке: {pos}");
+}
+
+
