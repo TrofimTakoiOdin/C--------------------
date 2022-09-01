@@ -50,6 +50,34 @@ PrintArray(array);
 
 Console.WriteLine(); 
 
-Console.Write("Введите целое число, индекс которого необходимо найти: ");
-int UserIn = int.Parse(Console.ReadLine());
-IndexOf(array,UserIn);
+//int UserIn = int.Parse(Console.ReadLine());
+
+int lever = 1;
+while (lever == 1)
+{
+    Console.WriteLine("Введите целое число, индекс которого необходимо найти: ");
+    string UserIn = Console.ReadLine();
+    if (int.TryParse(UserIn, out int X3) == true)
+    {
+        IndexOf(array,int.Parse(UserIn));
+    }
+    else
+    {
+        Console.WriteLine("Это не число!");
+    }
+    lever = 2;
+    while (lever > 1)
+    {
+        Console.WriteLine("Повторить? Y/N");
+        UserIn = Console.ReadLine();
+        lever = 0;
+        if (UserIn.ToLower() == "y")
+        {
+            lever = 1;
+        }
+        else if (UserIn.ToLower() == "n")
+        {
+            lever = 0;
+        }
+    }
+}    
