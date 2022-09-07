@@ -2,7 +2,7 @@
 {
     private static void Main(string[] args)
     {
-        void FiveDigitPalindrome()
+        static void FiveDigitPalindrome()
 
         {
             Console.WriteLine("Введите пятизначное число: ");
@@ -25,9 +25,9 @@
                 Console.WriteLine("Вы ввели что-то не то!");
             }
         }
-        
-         
-        double x = 0,
+        static void StereoDistance()
+        {
+            double x = 0,
                y = 0,
                z = 0; 
         
@@ -41,6 +41,10 @@
         Console.WriteLine($"Координаты точки А: X = {p1.X}, Y = {p1.Y}, Z = {p1.Z}");
         Console.WriteLine($"Координаты точки Б: X = {p2.X}, Y = {p2.Y}, Z = {p2.Z}");
         Console.WriteLine($"Расстояние между точками в 3D пространстве = {Math.Round(D, 2)}");
+        }
+        StereoDistance();
+         
+        
         
 
         
