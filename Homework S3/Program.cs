@@ -40,7 +40,7 @@
         var D = Distance.Distance3D(p1, p2);
         Console.WriteLine(p1.X + " " + p1.Y + " " + p1.Z);
         Console.WriteLine(p2.X + " " + p2.Y + " " + p2.Z);
-        Console.WriteLine(D);
+        Console.WriteLine(Math.Round(D, 2));
         
 
         
