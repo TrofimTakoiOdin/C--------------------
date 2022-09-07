@@ -30,8 +30,17 @@
         double x = 0,
                y = 0,
                z = 0; 
+        
         var p1 = new Homework_S3.PointThreeD(x, y, z);
-        p1.Read3DPoint();
+        p1 = p1.Read3DPoint();
+        var p2 = new Homework_S3.PointThreeD(x, y, z);
+        p2 = p2.Read3DPoint();
+
+        Homework_S3.StereoMeasurment Distance = new Homework_S3.StereoMeasurment();
+        var D = Distance.Distance3D(p1, p2);
+        Console.WriteLine(p1.X + " " + p1.Y + " " + p1.Z);
+        Console.WriteLine(p2.X + " " + p2.Y + " " + p2.Z);
+        Console.WriteLine(D);
         
 
         
