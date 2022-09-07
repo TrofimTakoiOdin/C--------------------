@@ -38,9 +38,9 @@
 
         Homework_S3.StereoMeasurment Distance = new Homework_S3.StereoMeasurment();
         var D = Distance.Distance3D(p1, p2);
-        Console.WriteLine(p1.X + " " + p1.Y + " " + p1.Z);
-        Console.WriteLine(p2.X + " " + p2.Y + " " + p2.Z);
-        Console.WriteLine(Math.Round(D, 2));
+        Console.WriteLine($"Координаты точки А: X = {p1.X}, Y = {p1.Y}, Z = {p1.Z}");
+        Console.WriteLine($"Координаты точки Б: X = {p2.X}, Y = {p2.Y}, Z = {p2.Z}");
+        Console.WriteLine($"Расстояние между точками в 3D пространстве = {Math.Round(D, 2)}");
         
 
         
