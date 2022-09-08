@@ -10,6 +10,9 @@
         static void FiveDigitPalindrome()
 
         {
+            Console.WriteLine("Программа принимает на вход пятизначное число ");
+            Console.WriteLine("и проверяет, является ли оно палиндромом.");
+            Console.WriteLine("==============");
             Console.WriteLine("Введите пятизначное число: ");
             string a = new(Console.ReadLine());
             int x;
@@ -38,10 +41,19 @@
                z = 0; 
         
         var p1 = new Homework_S3.PointThreeD(x, y, z);
-        p1 = p1.Read3DPoint();
-        var p2 = new Homework_S3.PointThreeD(x, y, z);
-        p2 = p2.Read3DPoint();
+        Console.WriteLine("Программа принимает на вход координаты двух точек");
+        Console.WriteLine("и находит расстояние между ними в 3D пространстве");
+        Console.WriteLine("Например: A (3,6,8); B (2,1,-7)");
+        Console.WriteLine("========================");
 
+        Console.WriteLine("Для точки А введите координаты (каждое число на отдельной строке)");
+        Console.WriteLine();
+        p1 = p1.Read3DPoint();
+        Console.WriteLine();
+        var p2 = new Homework_S3.PointThreeD(x, y, z);
+        Console.WriteLine("Для точки Б введите координаты (каждое число на отдельной строке)");
+        p2 = p2.Read3DPoint();
+        Console.WriteLine();
         Homework_S3.StereoMeasurment Distance = new Homework_S3.StereoMeasurment();
         var D = Distance.Distance3D(p1, p2);
         Console.WriteLine($"Координаты точки А: X = {p1.X}, Y = {p1.Y}, Z = {p1.Z}");
