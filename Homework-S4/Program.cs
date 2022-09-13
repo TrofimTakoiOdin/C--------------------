@@ -47,6 +47,6 @@
                 Console.WriteLine("Вы ввели что-то не то!");
             }
         }
-        DigitSum();
+        
     }
 }
