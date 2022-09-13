@@ -2,7 +2,7 @@
 {
     private static void Main(string[] args)
     {
-        static void AinPowerB()  // Возводим число A в степень B
+        static void AinPowerB()  // Задача 25. Возводим число A в степень B
         {
             Console.WriteLine("Введите число 'a': ");
             string a = new(Console.ReadLine());
@@ -25,6 +25,28 @@
                 Console.WriteLine("Вы ввели что-то не то!");
             }
         }
-        
+        static void DigitSum()  // Задача 27. Ищем сумму цифр числа
+        {
+            Console.WriteLine("Введите число, сумму цифр которого вы хотите найти: ");
+            string a = new(Console.ReadLine());
+            string b = a;
+            int x, Counter;
+            if (int.TryParse(a, out x) && x >= 0)
+            {
+                Counter = 0;
+                for (int i = 0; i < b.Length; i++)
+                {
+                    
+                    Counter = Counter + (int)char.GetNumericValue(b[i]);
+                }
+                Console.WriteLine($"Сумма цифр введенного числа: {Counter}");
+
+            }
+            else
+            {
+                Console.WriteLine("Вы ввели что-то не то!");
+            }
+        }
+        DigitSum();
     }
 }
