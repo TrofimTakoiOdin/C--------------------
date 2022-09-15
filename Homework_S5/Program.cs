@@ -14,5 +14,22 @@
 }
 static void UnevenIndexSum()
 {
-    
+    const int Size = 10;
+    Random rnd = new Random();
+    int UnevenPosCounter = 0;
+    int [] RandomNumbers = new int[Size];
+    int i;
+    Console.WriteLine("Массив случайных чисел: ");
+    for (i = 0; i < Size; i++)
+    {
+        RandomNumbers[i] = rnd.Next(-100, 101);
+        Console.Write(RandomNumbers[i] + " ");
+    }
+    Console.WriteLine();
+    for (i = 1; i < RandomNumbers.Length; i += 2)
+    {
+        UnevenPosCounter += RandomNumbers[i];
+    }
+    Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях: {UnevenPosCounter}");
 }
+UnevenIndexSum();
