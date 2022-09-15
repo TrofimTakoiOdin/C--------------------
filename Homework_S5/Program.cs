@@ -32,4 +32,17 @@ static void UnevenIndexSum()
     }
     Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях: {UnevenPosCounter}");
 }
-UnevenIndexSum();
+static void MaxMinDifference()
+{
+    const int Size = 15;
+    Random rnd = new Random();
+    double [] DoubleArray = new double[Size];
+    int i;
+    Console.WriteLine("Массив вещественных чисел: ");
+
+    for (i = 0; i < Size; i++)
+    {
+        DoubleArray[i] = rnd.Next(-100, 101);
+        Console.Write(DoubleArray[i] + " ");
+    }
+}
