@@ -38,6 +38,8 @@ static void MaxMinDifference()
     Random rnd = new Random();
     double [] DoubleArray = new double[Size];
     int i;
+    Console.BackgroundColor = ConsoleColor.White; 
+    Console.ForegroundColor = ConsoleColor.Red; 
     Console.WriteLine("Массив вещественных чисел: ");
 
     for (i = 0; i < Size; i++)
@@ -45,4 +47,45 @@ static void MaxMinDifference()
         DoubleArray[i] = rnd.Next(-100, 101);
         Console.Write(DoubleArray[i] + " ");
     }
+    Console.ResetColor();
+
+    var Max = DoubleArray[MaxIndex(DoubleArray)];
+    var Min = DoubleArray[MinIndex(DoubleArray)];
+    var Difference = Max - Min;
+ 
+    Console.WriteLine();
+    Console.BackgroundColor = ConsoleColor.White; 
+    Console.ForegroundColor = ConsoleColor.DarkBlue; 
+    Console.WriteLine($"Максимальное число в массиве: {Max}");
+    Console.WriteLine();
+    Console.WriteLine($"Минимальное число в массиве: {Min}");
+    Console.ResetColor();
+    Console.WriteLine();
+    Console.WriteLine("Искомая разность: ");
+    Console.WriteLine($"{Max} — {Min} = {Difference}");
 }
+static int MinIndex(double[] Array)
+{
+    int MinInd = 0;
+    for (int i = 1; i < Array.Length; i++)
+    {
+        if (Array[i] < Array[i - 1])
+        {
+            MinInd = i;
+        }
+    }
+    return MinInd;
+}
+static int MaxIndex(double[] Array)
+{
+    int MaxInd = 0;
+    for (int i = 1; i < Array.Length; i++)
+    {
+        if (Array[i] > Array[i - 1])
+        {
+            MaxInd = i;
+        }
+    }
+    return MaxInd;
+}
+MaxMinDifference();
