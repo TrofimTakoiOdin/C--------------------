@@ -9,14 +9,12 @@
         {
             EvenCounter += 1;
         }
-    }
-    Console.BackgroundColor = ConsoleColor.Black; 
+    } 
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("Задан массив заполненный случайными положительными трёхзначными числами"); 
     Console.WriteLine("Программа показывает количество чётных чисел в массиве.");
     Console.WriteLine();
-    Console.ResetColor();
-    Console.BackgroundColor = ConsoleColor.Black; 
+    Console.ResetColor(); 
     Console.ForegroundColor = ConsoleColor.DarkBlue;
     Console.WriteLine($"Количество четных трехзначных чисел в массиве из 8 случайных трехзначных чисел: {EvenCounter}");
     Console.ResetColor();
@@ -40,7 +38,6 @@ static void UnevenIndexSum() // Задача 36
     {
         UnevenPosCounter += RandomNumbers[i];
     }
-    Console.BackgroundColor = ConsoleColor.Black; 
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     
     Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях: {UnevenPosCounter}");
@@ -51,8 +48,7 @@ static void MaxMinDifference() // Задача 38
     const int Size = 15;
     Random rnd = new Random();
     double [] DoubleArray = new double[Size];
-    int i;
-    Console.BackgroundColor = ConsoleColor.Black; 
+    int i; 
     Console.ForegroundColor = ConsoleColor.DarkGreen; 
     Console.WriteLine("Массив вещественных чисел: ");
     Console.WriteLine();
@@ -68,15 +64,13 @@ static void MaxMinDifference() // Задача 38
     var Min = DoubleArray[MinIndex(DoubleArray)];
     var Difference = Max - Min;
  
-    Console.WriteLine();
-    Console.BackgroundColor = ConsoleColor.Black; 
+    Console.WriteLine(); 
     Console.ForegroundColor = ConsoleColor.DarkBlue;
     Console.WriteLine(); 
     Console.WriteLine($"Максимальное число в массиве: {Max}");
     Console.WriteLine($"Минимальное число в массиве: {Min}");
     Console.ResetColor();
-    Console.WriteLine();
-    Console.BackgroundColor = ConsoleColor.Black; 
+    Console.WriteLine(); 
     Console.ForegroundColor = ConsoleColor.DarkMagenta;
     Console.WriteLine("Искомая разность: ");
     Console.WriteLine($"{Max} — {Min} = {Difference}");
