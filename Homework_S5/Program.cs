@@ -10,12 +10,16 @@
             EvenCounter += 1;
         }
     }
+    Console.BackgroundColor = ConsoleColor.Black; 
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("Задан массив заполненный случайными положительными трёхзначными числами"); 
     Console.WriteLine("Программа показывает количество чётных чисел в массиве.");
     Console.WriteLine();
+    Console.ResetColor();
     Console.BackgroundColor = ConsoleColor.Black; 
     Console.ForegroundColor = ConsoleColor.DarkBlue;
     Console.WriteLine($"Количество четных трехзначных чисел в массиве из 8 случайных трехзначных чисел: {EvenCounter}");
+    Console.ResetColor();
 }
 static void UnevenIndexSum() // Задача 36
 {
