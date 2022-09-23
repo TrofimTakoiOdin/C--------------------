@@ -29,7 +29,7 @@ static void Intersection()  // Задача 43
     double b1 = Convert.ToInt32(Console.ReadLine());
     Console.Clear();
 
-    if (k != k1 && b != b1)
+    if (k != k1 && (b != b1 || b == b1))
     {
         double x = (b1 - b) / (k - k1);
         double y = k * x + b;
