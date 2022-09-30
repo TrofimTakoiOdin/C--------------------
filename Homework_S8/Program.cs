@@ -2,7 +2,7 @@
     {
         static void Main(string[] args)
         {
-            Problem58();
+            Problem60();
             
             
             
@@ -17,6 +17,7 @@
             int[,] Matrix = new int[x, y];
             return Matrix;
         }
+        
         static void PrintArray(int[,] Arr)
         {
            for (int i = 0; i < Arr.GetLength(0); i++)
@@ -162,5 +163,81 @@
             }
 
         }
-    }
+    
+        static void Problem60()
+        {
+            int[,,] My3DMass = Init3DArray();
+            Fill3DArray(My3DMass);
+            Print3DArray(My3DMass);
+        }
+        static int[,,] Init3DArray()
+        {
+            Console.WriteLine("Введите размеры массива (X x Y x Z): ");
+            Console.WriteLine("Введите X: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите Y: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите Z: ");
+            int z = Convert.ToInt32(Console.ReadLine());
+            int[,,] Array3D = new int[x, y, z];
+            return Array3D;
+        
+        }
+    
+        static void Fill3DArray(int[,,] Arr)
+        {
+            int[] Temp = new int[Arr.GetLength(0) * Arr.GetLength(1) * Arr.GetLength(2)];
+            int  number;
+            for (int i = 0; i < Temp.GetLength(0); i++)
+            {
+                Temp[i] = new Random().Next(10, 100);
+                number = Temp[i];
+                if (i >= 1)
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        while (Temp[i] == Temp[j])
+                        {
+                            Temp[i] = new Random().Next(10, 100);
+                            j = 0;
+                            number = Temp[i];
+                        }
+                        number = Temp[i];
+                    }
+                }
+            } 
+            int Count = 0; 
+            for (int x = 0; x < Arr.GetLength(0); x++)
+            {
+                for (int y = 0; y < Arr.GetLength(1); y++)
+                {
+                    for (int z = 0; z < Arr.GetLength(2); z++)
+                    {
+                    Arr[x, y, z] = Temp[Count];
+                    Count++;
+                    }
+                }
+            }
+        }
+        static void Print3DArray (int[,,] array3D)
+        {
+            for (int i = 0; i < array3D.GetLength(0); i++)
+            {
+                for (int j = 0; j < array3D.GetLength(1); j++)
+                {
+                    Console.Write($"X({i}) Y({j}) ");
+                    for (int k = 0; k < array3D.GetLength(2); k++)
+                    {
+                        Console.Write( $"Z({k}) = {array3D[i,j,k]}; ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+        }
+    
+    }    
+           
+
+    
        
